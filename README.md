@@ -5,6 +5,8 @@ Anopr is a set of modules that work together to authenticate IRC chatters agains
 - A C++ [Anope](https://www.anope.org/) module
 - A set of PHP scripts
 
+This system is necessary because Composr uses PHP's `password_hash` and `password_verify` functions, which Anope's SQL authentication module cannot handle.
+
 ## Setup & Configuration
 
 To use Anopr, you must have a Composr installation with user accounts set up, and an IRC server that you plan to use Anope services with.
